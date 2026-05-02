@@ -1,0 +1,131 @@
+﻿@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<div class="container mt-5">
+    <!-- Hero Section -->
+    <div class="row">
+        <div class="col-md-12 text-center mb-5">
+            <h1 class="display-4">Kütüphane Sistemine Hoş Geldiniz</h1>
+            <p class="lead">Modern ve kullanıcı dostu kütüphane sistemimiz ile kitapları keşfedin, ödünç alın ve bilgiye erişimi kolaylaştırın.</p>
+        </div>
+    </div>
+
+    <!-- Duyurular -->
+    <div class="row mb-5">
+        <div class="col-md-12">
+            <div class="card border-warning">
+                <div class="card-header bg-warning text-dark">
+                    <h4 class="mb-0"><i class="bi bi-megaphone-fill me-2"></i>Duyurular</h4>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-info">
+                        <h5><i class="bi bi-info-circle me-2"></i>Yeni Üyelik Sistemi</h5>
+                        <p>Kütüphanemiz artık dijital üyelik sistemine geçmiştir. Tüm işlemlerinizi online olarak gerçekleştirebilirsiniz.</p>
+                    </div>
+                    <div class="alert alert-success">
+                        <h5><i class="bi bi-book me-2"></i>Yeni Kitaplar</h5>
+                        <p>Bu ay 100'den fazla yeni kitap koleksiyonumuza eklenmiştir. Yeni kitapları "Kitaplar" bölümünden inceleyebilirsiniz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- İstatistikler ve Çalışma Saatleri -->
+    <div class="row mt-5">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0"><i class="bi bi-graph-up me-2"></i>Hızlı İstatistikler</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <h5>Toplam Kitap</h5>
+                            <p class="display-4">@ViewBag.ToplamKitap</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>Toplam Kullanıcı</h5>
+                            <p class="display-4">@ViewBag.ToplamKullanici</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>Aktif Ödünçler</h5>
+                            <p class="display-4">@ViewBag.AktifOdunc</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    <h4 class="mb-0"><i class="bi bi-clock me-2"></i>Çalışma Saatleri</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><strong>Pazartesi - Cuma:</strong> 09:00 - 18:00</li>
+                        <li class="mb-2"><strong>Cumartesi:</strong> 10:00 - 16:00</li>
+                        <li class="mb-2"><strong>Pazar:</strong> Kapalı</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kütüphane Kuralları -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h4 class="mb-0"><i class="bi bi-clipboard-check me-2"></i>Kütüphane Kuralları</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Ödünç Alma Kuralları</h5>
+                            <ul>
+                                <li>Bir kullanıcı en fazla 3 kitap ödünç alabilir</li>
+                                <li>Ödünç alma süresi 15 gündür</li>
+                                <li>Süre uzatma işlemi bir kez yapılabilir</li>
+                                <li>Gecikme durumunda günlük ceza uygulanır</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Genel Kurallar</h5>
+                            <ul>
+                                <li>Kütüphane içinde sessiz olunması gerekmektedir</li>
+                                <li>Yiyecek ve içecek kullanımı yasaktır</li>
+                                <li>Kitaplara zarar vermek yasaktır</li>
+                                <li>Üyelik kartı yanında olmayan kullanıcılar işlem yapamaz</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- İletişim Bilgileri -->
+    <div class="row mt-4 mb-5">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header bg-secondary text-white">
+                    <h4 class="mb-0"><i class="bi bi-envelope me-2"></i>İletişim</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><i class="bi bi-geo-alt me-2"></i><strong>Adres:</strong> Kütüphane Caddesi No:1, Merkez/Şehir</p>
+                            <p><i class="bi bi-telephone me-2"></i><strong>Telefon:</strong> (0xxx) xxx xx xx</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><i class="bi bi-envelope me-2"></i><strong>E-posta:</strong> info@kutuphane.com</p>
+                            <p><i class="bi bi-globe me-2"></i><strong>Web:</strong> www.kutuphane.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
